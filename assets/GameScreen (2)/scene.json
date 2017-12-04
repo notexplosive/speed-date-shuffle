@@ -1,0 +1,1649 @@
+{
+  "formatVersion": 1,
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Camera",
+      "children": [],
+      "components": [
+        {
+          "type": "Camera",
+          "config": {
+            "formatVersion": 1,
+            "mode": "orthographic",
+            "fov": 45,
+            "orthographicScale": 10,
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 1
+            },
+            "depth": 0,
+            "nearClippingPlane": 0.1,
+            "farClippingPlane": 1000
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 5
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "3",
+      "name": "Deck",
+      "children": [],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "DeckObjectBehavior",
+            "propertyValues": {
+              "deckOwnerName": {
+                "type": "string",
+                "value": "Player"
+              }
+            }
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": -4.0727081298828125,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "15",
+      "name": "ScoreEstimator",
+      "children": [
+        {
+          "id": "31",
+          "name": "Heart",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "64",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -2
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.66,
+            "y": 0.66,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "TextRenderer",
+          "config": {
+            "formatVersion": 2,
+            "fontAssetId": "3",
+            "text": "x2",
+            "alignment": "center",
+            "verticalAlignment": "center",
+            "size": 32,
+            "color": "ffffff",
+            "overrideOpacity": true,
+            "opacity": 1
+          },
+          "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ScoreEstimatorBehavior",
+            "propertyValues": {}
+          },
+          "id": "1"
+        }
+      ],
+      "position": {
+        "x": 2,
+        "y": 3.85,
+        "z": 1.1
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "14",
+      "name": "DateCounter",
+      "children": [
+        {
+          "id": "22",
+          "name": "Circle",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "64",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -1
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "TextRenderer",
+          "config": {
+            "formatVersion": 2,
+            "fontAssetId": "3",
+            "text": "0",
+            "alignment": "center",
+            "verticalAlignment": "center",
+            "size": 128,
+            "color": "000000",
+            "overrideOpacity": true,
+            "opacity": 1
+          },
+          "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "CoolTextBehavior",
+            "propertyValues": {}
+          },
+          "id": "1"
+        }
+      ],
+      "position": {
+        "x": 1.25,
+        "y": 4,
+        "z": 0.10000000149011612
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "25",
+      "name": "Score",
+      "children": [
+        {
+          "id": "26",
+          "name": "Heart",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "64",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -0.2
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "TextRenderer",
+          "config": {
+            "formatVersion": 2,
+            "fontAssetId": "3",
+            "text": "0",
+            "alignment": "center",
+            "verticalAlignment": "center",
+            "size": 128,
+            "color": "ffac59",
+            "overrideOpacity": true,
+            "opacity": 1
+          },
+          "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "CoolTextBehavior",
+            "propertyValues": {}
+          },
+          "id": "1"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ScoreTrackerBehavior",
+            "propertyValues": {}
+          },
+          "id": "2"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "MoveToStartPositionBehavior",
+            "propertyValues": {
+              "offset": {
+                "type": "Sup.Math.Vector2",
+                "value": {
+                  "x": 0,
+                  "y": 4
+                }
+              },
+              "delay": {
+                "type": "number",
+                "value": 180
+              }
+            }
+          },
+          "id": "4"
+        }
+      ],
+      "position": {
+        "x": 5,
+        "y": 3.6,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "6",
+      "name": "PoolValue",
+      "children": [
+        {
+          "id": "23",
+          "name": "Circle",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "64",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -0.2
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "TextRenderer",
+          "config": {
+            "formatVersion": 2,
+            "fontAssetId": "3",
+            "text": "0",
+            "alignment": "center",
+            "verticalAlignment": "center",
+            "size": 128,
+            "color": "000000",
+            "overrideOpacity": true,
+            "opacity": 1
+          },
+          "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "PoolCounterBehavior",
+            "propertyValues": {}
+          },
+          "id": "1"
+        }
+      ],
+      "position": {
+        "x": -1.25,
+        "y": 4,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "5",
+      "name": "PlayArea",
+      "children": [],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "PlayAreaBehavior",
+            "propertyValues": {}
+          },
+          "id": "1"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -1
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "7",
+      "name": "Err",
+      "children": [
+        {
+          "id": "30",
+          "name": "shadow",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "3",
+                "text": "Error, you made a mistake",
+                "alignment": "center",
+                "verticalAlignment": "center",
+                "size": null,
+                "color": "4f150f",
+                "overrideOpacity": true,
+                "opacity": 1
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 0.02,
+            "y": -0.02,
+            "z": -0.1
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ErrorTextBehavior",
+            "propertyValues": {}
+          },
+          "id": "0"
+        },
+        {
+          "type": "TextRenderer",
+          "config": {
+            "formatVersion": 2,
+            "fontAssetId": "3",
+            "text": "Error, you made a mistake",
+            "alignment": "center",
+            "verticalAlignment": "center",
+            "size": null,
+            "color": "db5040",
+            "overrideOpacity": true,
+            "opacity": 1
+          },
+          "id": "1"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 1.581,
+        "z": 1
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "8",
+      "name": "Overlay",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "16",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "9",
+      "name": "PlayButton",
+      "children": [],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ButtonBehavior",
+            "propertyValues": {
+              "callback": {
+                "type": "string",
+                "value": "play"
+              },
+              "text": {
+                "type": "string",
+                "value": "Play"
+              }
+            }
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": -4,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "10",
+      "name": "CancelButton",
+      "children": [],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ButtonBehavior",
+            "propertyValues": {
+              "callback": {
+                "type": "string",
+                "value": "cancel"
+              },
+              "text": {
+                "type": "string",
+                "value": "Cancel"
+              }
+            }
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 4,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "12",
+      "name": "BG",
+      "children": [
+        {
+          "id": "17",
+          "name": "Chair",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "59",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "MoveToStartPositionBehavior",
+                "propertyValues": {
+                  "offset": {
+                    "type": "Sup.Math.Vector2",
+                    "value": {
+                      "x": 8,
+                      "y": 0
+                    }
+                  },
+                  "delay": {
+                    "type": "number",
+                    "value": 170
+                  }
+                }
+              },
+              "id": "2"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0.1
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "18",
+          "name": "Table",
+          "children": [
+            {
+              "id": "19",
+              "name": "Food",
+              "children": [],
+              "components": [
+                {
+                  "type": "SpriteRenderer",
+                  "config": {
+                    "formatVersion": 1,
+                    "spriteAssetId": "60",
+                    "animationId": null,
+                    "horizontalFlip": false,
+                    "verticalFlip": false,
+                    "castShadow": false,
+                    "receiveShadow": false,
+                    "color": "ffffff",
+                    "overrideOpacity": false,
+                    "opacity": null,
+                    "materialType": "basic",
+                    "shaderAssetId": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0.010000228881835938
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "58",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": null,
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "1"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "MoveToStartPositionBehavior",
+                "propertyValues": {
+                  "offset": {
+                    "type": "Sup.Math.Vector2",
+                    "value": {
+                      "x": 0,
+                      "y": -10
+                    }
+                  },
+                  "delay": {
+                    "type": "number",
+                    "value": 170
+                  }
+                }
+              },
+              "id": "2"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 4.5
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "33",
+          "name": "Table1",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "76",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "MoveToStartPositionBehavior",
+                "propertyValues": {
+                  "offset": {
+                    "type": "Sup.Math.Vector2",
+                    "value": {
+                      "x": -8,
+                      "y": 0
+                    }
+                  },
+                  "delay": {
+                    "type": "number",
+                    "value": 50
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": -5.228,
+            "y": 2.187,
+            "z": 0.01
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "34",
+          "name": "Table2",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "77",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "MoveToStartPositionBehavior",
+                "propertyValues": {
+                  "offset": {
+                    "type": "Sup.Math.Vector2",
+                    "value": {
+                      "x": -16,
+                      "y": 0
+                    }
+                  },
+                  "delay": {
+                    "type": "number",
+                    "value": 50
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 3.165,
+            "y": 2.493,
+            "z": 0.01
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "35",
+          "name": "Table3",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "78",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "MoveToStartPositionBehavior",
+                "propertyValues": {
+                  "offset": {
+                    "type": "Sup.Math.Vector2",
+                    "value": {
+                      "x": -16,
+                      "y": 0
+                    }
+                  },
+                  "delay": {
+                    "type": "number",
+                    "value": 50
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": -1.192,
+            "y": 1.36,
+            "z": 0.01
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "36",
+          "name": "Table4",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "79",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "MoveToStartPositionBehavior",
+                "propertyValues": {
+                  "delay": {
+                    "type": "number",
+                    "value": 50
+                  },
+                  "offset": {
+                    "type": "Sup.Math.Vector2",
+                    "value": {
+                      "x": 8,
+                      "y": 0
+                    }
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 4.973,
+            "y": 1.623,
+            "z": 0.01
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "23",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -5
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "16",
+      "name": "MusicHandler",
+      "children": [],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "MusicHandlerBehavior",
+            "propertyValues": {}
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": -7.0706007192045535,
+        "y": 0.7771338434189213,
+        "z": 5
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "20",
+      "name": "Player",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "62",
+            "animationId": "1",
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "MoveToStartPositionBehavior",
+            "propertyValues": {
+              "offset": {
+                "type": "Sup.Math.Vector2",
+                "value": {
+                  "x": -5,
+                  "y": -5
+                }
+              },
+              "delay": {
+                "type": "number",
+                "value": 170
+              }
+            }
+          },
+          "id": "2"
+        }
+      ],
+      "position": {
+        "x": -4.79,
+        "y": -0.9,
+        "z": -0.1
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "21",
+      "name": "GameStart",
+      "children": [],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "GameStartBehavior",
+            "propertyValues": {}
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 2,
+        "z": 5
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "27",
+      "name": "White",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "66",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": true,
+            "opacity": 0,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 4
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "28",
+      "name": "DeckGraphic",
+      "children": [
+        {
+          "id": "29",
+          "name": "DeckCounter",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "3",
+                "text": "0",
+                "alignment": "center",
+                "verticalAlignment": "center",
+                "size": null,
+                "color": "ffffff",
+                "overrideOpacity": true,
+                "opacity": 1
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0.8,
+            "z": 1
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "72",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 5.5,
+        "y": -4,
+        "z": 0.2
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "37",
+      "name": "BackButton",
+      "children": [
+        {
+          "id": "39",
+          "name": "Text",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "3",
+                "text": "Back",
+                "alignment": "center",
+                "verticalAlignment": "center",
+                "size": null,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0.07961606979370117,
+            "z": 0.10000000894069672
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "69",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ButtonBehavior",
+            "propertyValues": {
+              "callback": {
+                "type": "string",
+                "value": "go-to-menu"
+              },
+              "playAreaButton": {
+                "type": "boolean",
+                "value": false
+              }
+            }
+          },
+          "id": "1"
+        }
+      ],
+      "position": {
+        "x": -5.585353374481201,
+        "y": 4.278304100036621,
+        "z": 0.20000000298023224
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "32",
+      "name": "CardSprite",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "0",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": -7.575448989868164,
+        "y": 3.2228729724884033,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    }
+  ]
+}

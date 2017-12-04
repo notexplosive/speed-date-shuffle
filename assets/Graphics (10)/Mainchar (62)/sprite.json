@@ -1,0 +1,44 @@
+{
+  "formatVersion": 3,
+  "maps": [
+    "map"
+  ],
+  "filtering": "pixelated",
+  "wrapping": "clampToEdge",
+  "pixelsPerUnit": 220,
+  "framesPerSecond": 10,
+  "opacity": null,
+  "alphaTest": 0.1,
+  "frameOrder": "rows",
+  "grid": {
+    "width": 797,
+    "height": 1633
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 0.5
+  },
+  "animations": [
+    {
+      "id": "0",
+      "name": "talk",
+      "startFrameIndex": 0,
+      "endFrameIndex": 1,
+      "speed": 1
+    },
+    {
+      "id": "1",
+      "name": "stop",
+      "startFrameIndex": 1,
+      "endFrameIndex": 1,
+      "speed": 1
+    }
+  ],
+  "mapSlots": {
+    "map": "map",
+    "light": null,
+    "specular": null,
+    "alpha": null,
+    "normal": null
+  }
+}

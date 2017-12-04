@@ -1,0 +1,260 @@
+{
+  "behaviors": {
+    "DeckObjectBehavior": {
+      "scriptId": "11",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "deckOwnerName",
+          "type": "string"
+        }
+      ]
+    },
+    "CardObjectBehavior": {
+      "scriptId": "4",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "color",
+          "type": "string"
+        },
+        {
+          "name": "value",
+          "type": "number"
+        },
+        {
+          "name": "targetPosition",
+          "type": "Sup.Math.Vector2"
+        }
+      ]
+    },
+    "PlayAreaBehavior": {
+      "scriptId": "12",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "PoolCounterBehavior": {
+      "scriptId": "13",
+      "line": 0,
+      "parentBehavior": "CoolTextBehavior",
+      "properties": []
+    },
+    "ErrorTextBehavior": {
+      "scriptId": "14",
+      "line": 0,
+      "parentBehavior": "CoolTextBehavior",
+      "properties": []
+    },
+    "ButtonBehavior": {
+      "scriptId": "17",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "callback",
+          "type": "string"
+        },
+        {
+          "name": "text",
+          "type": "string"
+        },
+        {
+          "name": "playAreaButton",
+          "type": "boolean"
+        }
+      ]
+    },
+    "DateBehavior": {
+      "scriptId": "25",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "disabled",
+          "type": "boolean"
+        },
+        {
+          "name": "difficulty",
+          "type": "number"
+        },
+        {
+          "name": "deck",
+          "type": "string"
+        },
+        {
+          "name": "basePitch",
+          "type": "number"
+        },
+        {
+          "name": "voiceName",
+          "type": "string"
+        }
+      ]
+    },
+    "ScoreEstimatorBehavior": {
+      "scriptId": "32",
+      "line": 0,
+      "parentBehavior": "CoolTextBehavior",
+      "properties": []
+    },
+    "CoolTextBehavior": {
+      "scriptId": "33",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "invertShadowColor",
+          "type": "boolean"
+        },
+        {
+          "name": "scaleFactor",
+          "type": "number"
+        }
+      ]
+    },
+    "MusicHandlerBehavior": {
+      "scriptId": "40",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "PopScoreBehavior": {
+      "scriptId": "61",
+      "line": 0,
+      "parentBehavior": "CoolTextBehavior",
+      "properties": [
+        {
+          "name": "delay",
+          "type": "number"
+        },
+        {
+          "name": "text",
+          "type": "string"
+        },
+        {
+          "name": "color",
+          "type": "number"
+        }
+      ]
+    },
+    "GameStartBehavior": {
+      "scriptId": "63",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "ScoreTrackerBehavior": {
+      "scriptId": "65",
+      "line": 0,
+      "parentBehavior": "CoolTextBehavior",
+      "properties": []
+    },
+    "MoveToStartPositionBehavior": {
+      "scriptId": "68",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "offset",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "delay",
+          "type": "number"
+        },
+        {
+          "name": "startPosition",
+          "type": "Sup.Math.Vector2"
+        }
+      ]
+    },
+    "HomingMissileBehavior": {
+      "scriptId": "73",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "velocity",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "targetPosition",
+          "type": "Sup.Math.Vector2"
+        }
+      ]
+    },
+    "MenuBehavior": {
+      "scriptId": "102",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "TimeToNextSceneBehavior": {
+      "scriptId": "105",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "timer",
+          "type": "number"
+        },
+        {
+          "name": "target",
+          "type": "string"
+        }
+      ]
+    },
+    "TutorialBehavior": {
+      "scriptId": "121",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "state",
+          "type": "number"
+        }
+      ]
+    },
+    "TutorialElementBehavior": {
+      "scriptId": "122",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "state",
+          "type": "number"
+        },
+        {
+          "name": "showUntil",
+          "type": "number"
+        },
+        {
+          "name": "stickAround",
+          "type": "boolean"
+        },
+        {
+          "name": "cardValue",
+          "type": "number"
+        },
+        {
+          "name": "cardColor",
+          "type": "string"
+        }
+      ]
+    },
+    "FadeInBehavior": {
+      "scriptId": "132",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "timer",
+          "type": "number"
+        }
+      ]
+    }
+  }
+}

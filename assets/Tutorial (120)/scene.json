@@ -1,0 +1,1622 @@
+{
+  "formatVersion": 1,
+  "nodes": [
+    {
+      "id": "0",
+      "name": "Camera",
+      "children": [],
+      "components": [
+        {
+          "type": "Camera",
+          "config": {
+            "formatVersion": 1,
+            "mode": "orthographic",
+            "fov": 45,
+            "orthographicScale": 10,
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 1
+            },
+            "depth": 0,
+            "nearClippingPlane": 0.1,
+            "farClippingPlane": 1000
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 5
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "1",
+      "name": "BG",
+      "children": [
+        {
+          "id": "2",
+          "name": "White",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "66",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": true,
+                "opacity": 0.27,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "23",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -2
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "3",
+      "name": "Text",
+      "children": [
+        {
+          "id": "4",
+          "name": "TextShadow",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "18",
+                "text": "So, you want to learn how to date like a pro, huh?\nWell, you came to the right place!",
+                "alignment": "center",
+                "verticalAlignment": "bottom",
+                "size": null,
+                "color": "000000",
+                "overrideOpacity": true,
+                "opacity": 0.73
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0.02653866447508335,
+            "y": -0.020294189453125,
+            "z": -0.10000000149011612
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "TextRenderer",
+          "config": {
+            "formatVersion": 2,
+            "fontAssetId": "18",
+            "text": "So, you want to learn how to date like a pro, huh?\nWell, you came to the right place!",
+            "alignment": "center",
+            "verticalAlignment": "bottom",
+            "size": null,
+            "color": null,
+            "overrideOpacity": true,
+            "opacity": 1
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": -3.6522653102874756,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "5",
+      "name": "Tutorial",
+      "children": [
+        {
+          "id": "21",
+          "name": "Card1",
+          "children": [],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TutorialElementBehavior",
+                "propertyValues": {
+                  "cardColor": {
+                    "type": "string",
+                    "value": "red"
+                  },
+                  "cardValue": {
+                    "type": "number",
+                    "value": 4
+                  },
+                  "state": {
+                    "type": "number",
+                    "value": 12
+                  },
+                  "showUntil": {
+                    "type": "number",
+                    "value": 13
+                  },
+                  "stickAround": {
+                    "type": "boolean",
+                    "value": true
+                  }
+                }
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -2,
+            "y": 1,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "25",
+          "name": "Card2",
+          "children": [],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TutorialElementBehavior",
+                "propertyValues": {
+                  "cardColor": {
+                    "type": "string",
+                    "value": "yellow"
+                  },
+                  "cardValue": {
+                    "type": "number",
+                    "value": 2
+                  },
+                  "state": {
+                    "type": "number",
+                    "value": 12
+                  },
+                  "stickAround": {
+                    "type": "boolean",
+                    "value": true
+                  },
+                  "showUntil": {
+                    "type": "number",
+                    "value": 13
+                  }
+                }
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "26",
+          "name": "Card3",
+          "children": [],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TutorialElementBehavior",
+                "propertyValues": {
+                  "cardColor": {
+                    "type": "string",
+                    "value": "yellow"
+                  },
+                  "cardValue": {
+                    "type": "number",
+                    "value": 1
+                  },
+                  "state": {
+                    "type": "number",
+                    "value": 12
+                  },
+                  "stickAround": {
+                    "type": "boolean",
+                    "value": true
+                  },
+                  "showUntil": {
+                    "type": "number",
+                    "value": 13
+                  }
+                }
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 2,
+            "y": 1,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "27",
+          "name": "Card4",
+          "children": [],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TutorialElementBehavior",
+                "propertyValues": {
+                  "cardColor": {
+                    "type": "string",
+                    "value": "blue"
+                  },
+                  "cardValue": {
+                    "type": "number",
+                    "value": 8
+                  },
+                  "state": {
+                    "type": "number",
+                    "value": 14
+                  }
+                }
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 1,
+            "y": 1,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "28",
+          "name": "Card5",
+          "children": [],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TutorialElementBehavior",
+                "propertyValues": {
+                  "cardColor": {
+                    "type": "string",
+                    "value": "green"
+                  },
+                  "cardValue": {
+                    "type": "number",
+                    "value": 0
+                  },
+                  "state": {
+                    "type": "number",
+                    "value": 14
+                  }
+                }
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -1,
+            "y": 1,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "8",
+          "name": "LifeGauge",
+          "children": [
+            {
+              "id": "9",
+              "name": "Text",
+              "children": [],
+              "components": [
+                {
+                  "type": "TextRenderer",
+                  "config": {
+                    "formatVersion": 2,
+                    "fontAssetId": "3",
+                    "text": "50%",
+                    "alignment": "center",
+                    "verticalAlignment": "center",
+                    "size": 128,
+                    "color": "ffac59",
+                    "overrideOpacity": true,
+                    "opacity": 1
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 1.7881393432617188e-7,
+                "y": 0,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "64",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "1"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TutorialElementBehavior",
+                "propertyValues": {
+                  "state": {
+                    "type": "number",
+                    "value": 1
+                  },
+                  "stickAround": {
+                    "type": "boolean",
+                    "value": true
+                  },
+                  "showUntil": {
+                    "type": "number",
+                    "value": 3
+                  }
+                }
+              },
+              "id": "2"
+            }
+          ],
+          "position": {
+            "x": 5,
+            "y": 3.6,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "10",
+          "name": "DateCounterHeart",
+          "children": [
+            {
+              "id": "11",
+              "name": "DateCounterValue",
+              "children": [],
+              "components": [
+                {
+                  "type": "TextRenderer",
+                  "config": {
+                    "formatVersion": 2,
+                    "fontAssetId": "3",
+                    "text": "6",
+                    "alignment": "center",
+                    "verticalAlignment": "center",
+                    "size": null,
+                    "color": "71ff28",
+                    "overrideOpacity": false,
+                    "opacity": null
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0.1
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "64",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TutorialElementBehavior",
+                "propertyValues": {
+                  "state": {
+                    "type": "number",
+                    "value": 3
+                  },
+                  "stickAround": {
+                    "type": "boolean",
+                    "value": true
+                  },
+                  "showUntil": {
+                    "type": "number",
+                    "value": 9
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 1.25,
+            "y": 4,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "12",
+          "name": "PlayerCounterHeart",
+          "children": [
+            {
+              "id": "13",
+              "name": "PlayerCounterValue1",
+              "children": [],
+              "components": [
+                {
+                  "type": "TextRenderer",
+                  "config": {
+                    "formatVersion": 2,
+                    "fontAssetId": "3",
+                    "text": "8",
+                    "alignment": "center",
+                    "verticalAlignment": "center",
+                    "size": null,
+                    "color": "eeeeee",
+                    "overrideOpacity": false,
+                    "opacity": null
+                  },
+                  "id": "0"
+                },
+                {
+                  "type": "Behavior",
+                  "config": {
+                    "behaviorName": "TutorialElementBehavior",
+                    "propertyValues": {
+                      "state": {
+                        "type": "number",
+                        "value": 4
+                      },
+                      "stickAround": {
+                        "type": "boolean",
+                        "value": true
+                      },
+                      "showUntil": {
+                        "type": "number",
+                        "value": 5
+                      }
+                    }
+                  },
+                  "id": "1"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0.1
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "14",
+              "name": "PlayerCounterValue2",
+              "children": [],
+              "components": [
+                {
+                  "type": "TextRenderer",
+                  "config": {
+                    "formatVersion": 2,
+                    "fontAssetId": "3",
+                    "text": "8",
+                    "alignment": "center",
+                    "verticalAlignment": "center",
+                    "size": null,
+                    "color": "71ff28",
+                    "overrideOpacity": false,
+                    "opacity": null
+                  },
+                  "id": "0"
+                },
+                {
+                  "type": "Behavior",
+                  "config": {
+                    "behaviorName": "TutorialElementBehavior",
+                    "propertyValues": {
+                      "state": {
+                        "type": "number",
+                        "value": 6
+                      },
+                      "stickAround": {
+                        "type": "boolean",
+                        "value": false
+                      }
+                    }
+                  },
+                  "id": "1"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0.1
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "16",
+              "name": "PlayerCounterValue3",
+              "children": [],
+              "components": [
+                {
+                  "type": "TextRenderer",
+                  "config": {
+                    "formatVersion": 2,
+                    "fontAssetId": "3",
+                    "text": "6",
+                    "alignment": "center",
+                    "verticalAlignment": "center",
+                    "size": null,
+                    "color": "71ff28",
+                    "overrideOpacity": false,
+                    "opacity": null
+                  },
+                  "id": "0"
+                },
+                {
+                  "type": "Behavior",
+                  "config": {
+                    "behaviorName": "TutorialElementBehavior",
+                    "propertyValues": {
+                      "state": {
+                        "type": "number",
+                        "value": 7
+                      },
+                      "stickAround": {
+                        "type": "boolean",
+                        "value": false
+                      }
+                    }
+                  },
+                  "id": "1"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0.1
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "17",
+              "name": "PlayerCounterValue4",
+              "children": [],
+              "components": [
+                {
+                  "type": "TextRenderer",
+                  "config": {
+                    "formatVersion": 2,
+                    "fontAssetId": "3",
+                    "text": "3",
+                    "alignment": "center",
+                    "verticalAlignment": "center",
+                    "size": null,
+                    "color": "71ff28",
+                    "overrideOpacity": false,
+                    "opacity": null
+                  },
+                  "id": "0"
+                },
+                {
+                  "type": "Behavior",
+                  "config": {
+                    "behaviorName": "TutorialElementBehavior",
+                    "propertyValues": {
+                      "state": {
+                        "type": "number",
+                        "value": 8
+                      },
+                      "stickAround": {
+                        "type": "boolean",
+                        "value": false
+                      }
+                    }
+                  },
+                  "id": "1"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0.1
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "18",
+              "name": "PlayerCounterValue5",
+              "children": [],
+              "components": [
+                {
+                  "type": "TextRenderer",
+                  "config": {
+                    "formatVersion": 2,
+                    "fontAssetId": "3",
+                    "text": "10",
+                    "alignment": "center",
+                    "verticalAlignment": "center",
+                    "size": null,
+                    "color": "71ff28",
+                    "overrideOpacity": false,
+                    "opacity": null
+                  },
+                  "id": "0"
+                },
+                {
+                  "type": "Behavior",
+                  "config": {
+                    "behaviorName": "TutorialElementBehavior",
+                    "propertyValues": {
+                      "state": {
+                        "type": "number",
+                        "value": 9
+                      },
+                      "stickAround": {
+                        "type": "boolean",
+                        "value": true
+                      },
+                      "showUntil": {
+                        "type": "number",
+                        "value": 11
+                      }
+                    }
+                  },
+                  "id": "1"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0.1
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "19",
+              "name": "PlayerCounterValue6",
+              "children": [],
+              "components": [
+                {
+                  "type": "TextRenderer",
+                  "config": {
+                    "formatVersion": 2,
+                    "fontAssetId": "3",
+                    "text": "7",
+                    "alignment": "center",
+                    "verticalAlignment": "center",
+                    "size": null,
+                    "color": "01ffd8",
+                    "overrideOpacity": false,
+                    "opacity": null
+                  },
+                  "id": "0"
+                },
+                {
+                  "type": "Behavior",
+                  "config": {
+                    "behaviorName": "TutorialElementBehavior",
+                    "propertyValues": {
+                      "state": {
+                        "type": "number",
+                        "value": 12
+                      },
+                      "showUntil": {
+                        "type": "number",
+                        "value": 13
+                      },
+                      "stickAround": {
+                        "type": "boolean",
+                        "value": true
+                      }
+                    }
+                  },
+                  "id": "1"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0.1
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "20",
+              "name": "PlayerCounterValue7",
+              "children": [],
+              "components": [
+                {
+                  "type": "TextRenderer",
+                  "config": {
+                    "formatVersion": 2,
+                    "fontAssetId": "3",
+                    "text": "8",
+                    "alignment": "center",
+                    "verticalAlignment": "center",
+                    "size": null,
+                    "color": "0e2259",
+                    "overrideOpacity": false,
+                    "opacity": null
+                  },
+                  "id": "0"
+                },
+                {
+                  "type": "Behavior",
+                  "config": {
+                    "behaviorName": "TutorialElementBehavior",
+                    "propertyValues": {
+                      "state": {
+                        "type": "number",
+                        "value": 14
+                      }
+                    }
+                  },
+                  "id": "1"
+                }
+              ],
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0.1
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "formatVersion": 1,
+                "spriteAssetId": "64",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TutorialElementBehavior",
+                "propertyValues": {
+                  "state": {
+                    "type": "number",
+                    "value": 4
+                  },
+                  "stickAround": {
+                    "type": "boolean",
+                    "value": true
+                  },
+                  "showUntil": {
+                    "type": "number",
+                    "value": 14
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": -1.25,
+            "y": 4,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "29",
+          "name": "Text1",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "3",
+                "text": "Good!",
+                "alignment": "center",
+                "verticalAlignment": "center",
+                "size": null,
+                "color": null,
+                "overrideOpacity": true,
+                "opacity": 1
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TutorialElementBehavior",
+                "propertyValues": {
+                  "state": {
+                    "type": "number",
+                    "value": 6
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 3,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "30",
+          "name": "Text2",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "3",
+                "text": "Perfect!",
+                "alignment": "center",
+                "verticalAlignment": "center",
+                "size": null,
+                "color": null,
+                "overrideOpacity": true,
+                "opacity": 1
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TutorialElementBehavior",
+                "propertyValues": {
+                  "state": {
+                    "type": "number",
+                    "value": 7
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 3,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "31",
+          "name": "Text3",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "3",
+                "text": "Bad :(",
+                "alignment": "center",
+                "verticalAlignment": "center",
+                "size": null,
+                "color": null,
+                "overrideOpacity": true,
+                "opacity": 1
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TutorialElementBehavior",
+                "propertyValues": {
+                  "state": {
+                    "type": "number",
+                    "value": 8
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 3,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "32",
+          "name": "Text4",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "formatVersion": 2,
+                "fontAssetId": "3",
+                "text": "This play would score 12\n6 (x2)\n10 is not factored into score",
+                "alignment": "center",
+                "verticalAlignment": "top",
+                "size": null,
+                "color": null,
+                "overrideOpacity": true,
+                "opacity": 1
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TutorialElementBehavior",
+                "propertyValues": {
+                  "state": {
+                    "type": "number",
+                    "value": 9
+                  }
+                }
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 3.3477344512939453,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "TutorialBehavior",
+            "propertyValues": {}
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "6",
+      "name": "RightArrow",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "86",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ButtonBehavior",
+            "propertyValues": {
+              "callback": {
+                "type": "string",
+                "value": "tutorial-next"
+              },
+              "text": {
+                "type": "string",
+                "value": ""
+              }
+            }
+          },
+          "id": "1"
+        }
+      ],
+      "position": {
+        "x": 6,
+        "y": -3,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "7",
+      "name": "LeftArrow",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "86",
+            "animationId": null,
+            "horizontalFlip": true,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ButtonBehavior",
+            "propertyValues": {
+              "callback": {
+                "type": "string",
+                "value": "tutorial-prev"
+              },
+              "text": {
+                "type": "string",
+                "value": ""
+              }
+            }
+          },
+          "id": "1"
+        }
+      ],
+      "position": {
+        "x": -6,
+        "y": -3,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "33",
+      "name": "ClearSaveData",
+      "children": [],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ButtonBehavior",
+            "propertyValues": {
+              "text": {
+                "type": "string",
+                "value": "Clear Save"
+              },
+              "callback": {
+                "type": "string",
+                "value": "clear-progress"
+              }
+            }
+          },
+          "id": "0"
+        },
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "72",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "1"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "TutorialElementBehavior",
+            "propertyValues": {
+              "state": {
+                "type": "number",
+                "value": 0
+              }
+            }
+          },
+          "id": "2"
+        }
+      ],
+      "position": {
+        "x": -5,
+        "y": 3,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    }
+  ]
+}
