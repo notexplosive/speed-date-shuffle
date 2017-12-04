@@ -1,2 +1,7 @@
-# Declare files that will always have CRLF line endings on checkout.
-* text eol=lf
+# Declare files that will always have LF line endings on checkout.
+*.ts text eol=lf
+*.json text eol=lf
+
+# Binaries that should not modify line endings
+*.png binary
+*.dat binary
