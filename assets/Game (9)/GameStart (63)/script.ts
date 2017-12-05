@@ -16,7 +16,9 @@ class GameStartBehavior extends Sup.Behavior {
       if(this.timer == 60 * 5.5){
         if(!this.startedIntro){
           this.startedIntro = true;
-          Sup.Audio.playSound("Sound/Intro");
+          if(MUSIC.getEnabled()){
+            Sup.Audio.playSound("Sound/Intro");
+          }
         }
       }
       
@@ -50,7 +52,10 @@ class GameStartBehavior extends Sup.Behavior {
       }
     }
     if(this.timer == 0){
-      MUSIC.play()
+      MUSIC.play();
+      if(CURRENT_DATE.difficulty >= 4){
+        MUSIC.play(3);
+      }
       this.timer = -1;
       CURRENT_DATE.disabled = false;
     }

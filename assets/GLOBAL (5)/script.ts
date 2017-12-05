@@ -16,6 +16,7 @@ let DATE_TEMPLATE:string = "template_Cat"
 
 let SCORE_WIN_THRESHOLD = 75;
 
+
 let RED = new Sup.Color(0x01ffd8)
 let BLUE = new Sup.Color(0x71ff28)
 let GREEN = new Sup.Color(0x0e2259)
@@ -146,9 +147,25 @@ for(let i = 0; i < 9; i++){
   deckListNoGreens.push(new Card("yellow",i));
 }
 
+let deckListHalvedCards = [];
+// Same number of cards except you only have values up to 6
+// No C cards.
+for(let i = 1; i < 6; i++){
+  deckListHalvedCards.push(new Card("red",i));
+  deckListHalvedCards.push(new Card("green",i));
+  deckListHalvedCards.push(new Card("yellow",i));
+  deckListHalvedCards.push(new Card("blue",i));
+  deckListHalvedCards.push(new Card("red",i));
+  deckListHalvedCards.push(new Card("green",i));
+  deckListHalvedCards.push(new Card("yellow",i));
+  deckListHalvedCards.push(new Card("blue",i));
+}
+
+
 let deckNames = {}
 deckNames['none'] = new Deck(deckList);
 deckNames['nogreens'] = new Deck(deckListNoGreens);
+deckNames['lowcards'] = new Deck(deckListHalvedCards);
 
 let DEFAULT_DECK:Deck = deckNames['none'];
 

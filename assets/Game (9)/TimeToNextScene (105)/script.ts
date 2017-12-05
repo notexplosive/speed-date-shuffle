@@ -7,6 +7,7 @@ class TimeToNextSceneBehavior extends Sup.Behavior {
     if(this.timer > 0){
       this.timer--;
     }else{
+      Sup.log("loading")
       Sup.loadScene(this.target)
     }
   }

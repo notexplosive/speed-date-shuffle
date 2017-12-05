@@ -3,6 +3,7 @@ class MenuBehavior extends Sup.Behavior {
     MENU = this;
     MUSIC.play(2);
     this.maxIndex = Sup.getActor("DateBackground").getChildren().length-1;
+    this.selectIndex = CURRENT_DATE_INDEX;
     this.handleOverlayText();
     saveProgress();
   }

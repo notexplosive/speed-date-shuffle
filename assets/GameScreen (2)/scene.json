@@ -24,6 +24,14 @@
             "farClippingPlane": 1000
           },
           "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "CameraShakeBehavior",
+            "propertyValues": {}
+          },
+          "id": "1"
         }
       ],
       "position": {

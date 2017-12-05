@@ -23,7 +23,6 @@ class DateBehavior extends Sup.Behavior {
     }else{
       PLAYER_SCORE--;
       this.scoreBleedInterval = 60*4;
-      Sup.log("bleed!")
       if(this.difficulty > 1){
         this.scoreBleedInterval -= this.difficulty*45;
         Sup.log(this.scoreBleedInterval)
@@ -73,7 +72,6 @@ class DateBehavior extends Sup.Behavior {
       }
       
       if(lengthClass == 0){ // short
-        Sup.log("short!")
         this.currentIntervalTimer = Math.floor(Math.random()*3) * 60 + 90;
         this.changeFace("talkHappy","stop");
         this.changeFace("talk","stop");
@@ -229,7 +227,7 @@ class DateBehavior extends Sup.Behavior {
     let playerTalking = Sup.getActor("Player").spriteRenderer.getAnimation() == "talk";
     if(this.currentAction == "talk" || this.currentAction == "talkHappy" || playerTalking){
       let pitch = this.basePitch + Math.random()/8;
-      let vol = .25 + Math.random()/4
+      let vol = .15 + Math.random()/8
       if(this.currentAction == "talkHappy"){
         pitch += .2;
       }

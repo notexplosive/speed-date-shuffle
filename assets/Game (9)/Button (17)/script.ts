@@ -2,6 +2,7 @@ class ButtonBehavior extends Sup.Behavior {
   callback = 'none'
   text = ''
   playAreaButton = false;
+  textRenderer:Sup.TextRenderer;
   private scaleFactor = 1;
   
   awake() {
@@ -18,11 +19,22 @@ class ButtonBehavior extends Sup.Behavior {
     let bt = new Sup.Actor("ButtonText",this.actor);
     bt.moveZ(.1);
     bt.moveY(-.5);
-    new Sup.TextRenderer(bt,this.text,"Graphics/Regular").setOpacity(1);
+    this.textRenderer = new Sup.TextRenderer(bt,this.text,"Graphics/Regular").setOpacity(1);
     this.scaleFactor = this.actor.getLocalScaleX();
   }
 
   update() {
+    
+    // hacky fix for mute button, consider having toggled states for all buttons??
+    if(this.actor.getName() == "ToggleMusic"){
+      let e = MUSIC.getEnabled()
+      let str = "Play Music"
+      if(e){
+        str = "Mute Music"
+      }
+      this.textRenderer.setText(str);
+    }
+    
     if(PLAYER_GRABBED && this.playAreaButton){
       this.actor.setVisible(false);
     }
@@ -88,5 +100,9 @@ let ButtonFunctions = {
   
   'clear-progress' : function(){
     clearProgress();
+  },
+  
+  'toggle-music' : function(){
+    MUSIC.toggle();
   }
 }

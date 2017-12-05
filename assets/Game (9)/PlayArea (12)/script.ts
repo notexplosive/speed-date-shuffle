@@ -6,11 +6,10 @@ class PlayAreaBehavior extends Sup.Behavior {
   update() {
     if(Sup.Input.wasKeyJustPressed("ESCAPE") ){
       this.returnPoolToDeck();
-      Sup.log("returning!")
     }
     
     if(this.pool.length > 0){
-      if(this.getTotalValue() > 0){
+      if(this.getTotalValue() > 0 && CURRENT_DATE.getCurrentColor() != 'white'){
         Sup.getActor("PlayButton").setVisible(true)
       }
       Sup.getActor("CancelButton").setVisible(true)

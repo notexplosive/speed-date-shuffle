@@ -1,17 +1,14 @@
 class PoolCounterBehavior extends CoolTextBehavior {
   update() {
+    let previousVisible = this.actor.getVisible();
+    let prevColor = this.actor.textRenderer.getColor();
     super.update();
     this.frame ++;
-    let justBecameVisible = false;
     
     let total = PLAYAREA.getTotalValue();
     if(total == 0){
       this.actor.setVisible(false);
     }else{
-      if(!this.actor.getVisible()){
-        justBecameVisible = true;
-      }
-      
       this.actor.setVisible(true);
     }
     
@@ -27,7 +24,7 @@ class PoolCounterBehavior extends CoolTextBehavior {
     }
     
     
-    if(this.frame % 30 == 0 || justBecameVisible){
+    if(this.frame % 10 == 0 || previousVisible != this.actor.getVisible()){
       let color = this.colorOptions[0];
       if(this.colorOptions.length > 1){
         let index = (this.colorIndex++)%this.colorOptions.length;

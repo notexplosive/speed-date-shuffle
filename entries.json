@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 133,
+  "nextEntryId": 136,
   "nodes": [
     {
       "id": "8",
@@ -132,6 +132,11 @@
           "id": "132",
           "name": "FadeIn",
           "type": "script"
+        },
+        {
+          "id": "135",
+          "name": "CameraShake",
+          "type": "script"
         }
       ]
     },
@@ -148,6 +153,11 @@
         {
           "id": "101",
           "name": "MenuGroove",
+          "type": "sound"
+        },
+        {
+          "id": "133",
+          "name": "Punk",
           "type": "sound"
         },
         {

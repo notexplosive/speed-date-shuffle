@@ -50,6 +50,7 @@ class ScoreTrackerBehavior extends CoolTextBehavior {
   
   queueSceneLoad(str:string){
     if(!this.triggerSceneTransition){
+      Sup.log("Triggered Scene Load")
       this.triggerSceneTransition = true;
       let b = this.actor.addBehavior(TimeToNextSceneBehavior)
       b.timer=60;
@@ -67,6 +68,8 @@ class ScoreTrackerBehavior extends CoolTextBehavior {
   
   // "score-ran-out" "out-of-cards"
   lose(reason?:string){
+    Sup.log("lost!")
+    Sup.log(reason);
     if(!this.loseGame){
       this.transitionTimer = 60;
       this.loseGame = true;

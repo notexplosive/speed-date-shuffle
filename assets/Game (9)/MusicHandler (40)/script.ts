@@ -46,8 +46,17 @@ class Jukebox{
     this.mainTrack.stop();
     for(let player of this.eventQueue){
       player.stop();
-      Sup.log(player.getState());
     }
+  }
+  
+  toggle(){
+    this.disabled = !this.disabled;
+    if(this.disabled){
+      this.stop();
+    }else{
+      this.play(2);
+    }
+    return !this.disabled;
   }
   
   fadeOut(){
@@ -55,6 +64,7 @@ class Jukebox{
   }
   
   play(n:number=1){
+    if(this.disabled){return}
     this.stop();
     
     if(n == 1){
@@ -64,6 +74,11 @@ class Jukebox{
     if(n == 2){
       this.mainTrack = this.menuTrack;
       this.mainTrack.setVolume(this.defaultVolume * 0.7)
+    }
+    if(n == 3){
+      this.mainTrack = this.punkTrack;
+      this.mainTrack.setVolume(this.defaultVolume * 0.1);
+      Sup.getActor("Camera").getBehavior(CameraShakeBehavior).shake(10);
     }
     
     this.fadeOutFlag = false;
@@ -79,10 +94,17 @@ class Jukebox{
     return this.mainTrack.getVolume();
   }
   
+  getEnabled(){
+    return !this.disabled;
+  }
+  
   playNextEvent(){
-    this.currentEvent = MUSIC.eventQueue[this.eventIndex++]
-    this.currentEvent.play();
-    this.eventIndex %= this.eventQueue.length;
+    if(this.disabled){return}
+    if(this.mainTrack != this.punkTrack){
+      this.currentEvent = MUSIC.eventQueue[this.eventIndex++]
+      this.currentEvent.play();
+      this.eventIndex %= this.eventQueue.length;
+    }
   }
   
   setEventQueue(list){
@@ -98,11 +120,13 @@ class Jukebox{
   
   fadeOutFlag = false;
   defaultVolume = .6;
+  private disabled = false;
   private currentEvent:Sup.Audio.SoundPlayer;
   private eventIndex = 0;
   private eventQueue:Sup.Audio.SoundPlayer[] = [];
   private dateTrack = new Sup.Audio.SoundPlayer("Sound/MainLoop");
   private menuTrack = new Sup.Audio.SoundPlayer("Sound/MenuGroove");
+  private punkTrack = new Sup.Audio.SoundPlayer("Sound/Punk");
   private mainTrack:Sup.Audio.SoundPlayer = this.dateTrack;
 }
 

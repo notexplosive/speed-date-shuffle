@@ -13,7 +13,7 @@ class DeckObjectBehavior extends Sup.Behavior {
     if(CURRENT_DATE.deck != "none"){
       if(deckNames[CURRENT_DATE.deck]){
         this.deckData = deckNames[CURRENT_DATE.deck];
-        this.deckData.restore;
+        this.deckData.restore();
       }
     }
   }

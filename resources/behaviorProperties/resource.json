@@ -255,6 +255,17 @@
           "type": "number"
         }
       ]
+    },
+    "CameraShakeBehavior": {
+      "scriptId": "135",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "shakeTick",
+          "type": "number"
+        }
+      ]
     }
   }
 }
