@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 136,
+  "nextEntryId": 140,
   "nodes": [
     {
       "id": "8",
@@ -136,6 +136,21 @@
         {
           "id": "135",
           "name": "CameraShake",
+          "type": "script"
+        },
+        {
+          "id": "137",
+          "name": "Sparkle",
+          "type": "script"
+        },
+        {
+          "id": "138",
+          "name": "ParticleOwner",
+          "type": "script"
+        },
+        {
+          "id": "139",
+          "name": "BurstHearts",
           "type": "script"
         }
       ]
@@ -622,6 +637,11 @@
         {
           "id": "62",
           "name": "Mainchar",
+          "type": "sprite"
+        },
+        {
+          "id": "136",
+          "name": "Sparkle",
           "type": "sprite"
         }
       ]

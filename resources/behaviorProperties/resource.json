@@ -266,6 +266,70 @@
           "type": "number"
         }
       ]
+    },
+    "SparkleBehavior": {
+      "scriptId": "137",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "name": "delay",
+          "type": "number"
+        }
+      ]
+    },
+    "ParticleOwnerBehavior": {
+      "scriptId": "138",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "offsetx",
+          "type": "number"
+        },
+        {
+          "name": "offsety",
+          "type": "number"
+        },
+        {
+          "name": "r",
+          "type": "number"
+        },
+        {
+          "name": "g",
+          "type": "number"
+        },
+        {
+          "name": "b",
+          "type": "number"
+        },
+        {
+          "name": "enabled",
+          "type": "boolean"
+        },
+        {
+          "name": "moveUp",
+          "type": "boolean"
+        },
+        {
+          "name": "radius",
+          "type": "number"
+        },
+        {
+          "name": "density",
+          "type": "number"
+        }
+      ]
+    },
+    "BurstHeartsBehavior": {
+      "scriptId": "139",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
     }
   }
 }

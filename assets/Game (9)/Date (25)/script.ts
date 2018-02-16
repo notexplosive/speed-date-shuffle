@@ -49,6 +49,7 @@ class DateBehavior extends Sup.Behavior {
       }
     }
     
+    /*
     if(PLAYER_SCORE < 10){
       this.changeFace("talk","stop");
       this.changeFace("talkHappy","stop");
@@ -57,6 +58,7 @@ class DateBehavior extends Sup.Behavior {
         this.iterateValue(Math.floor(Math.random()*4))
       }
     }
+    */
     
     if(this.currentIntervalTimer > 0){
       this.currentIntervalTimer--;
@@ -134,6 +136,7 @@ class DateBehavior extends Sup.Behavior {
     
     PLAYER_SCORE += score;
     let act;
+    Sup.getActor("BurstHearts").getBehavior(BurstHeartsBehavior).burst(score);
     if(score > 0){
       this.scoreBleedInterval = 60 * 4;
       let flavor = "OK";
@@ -271,7 +274,13 @@ class DateBehavior extends Sup.Behavior {
       this.currentValue = 1;
     }
     
-    if(Math.random() < .25 || this.currentColor == "white"){
+    if(this.currentValue > 4){
+      if(Math.random() < .25){
+        this.currentColor = 'white';
+      }
+    }
+    
+    if(this.currentColor == "white"){
       let index = Math.floor(Math.random()*COLORS.length);
       let tempcolor = COLORS[index];
       if(this.currentColor == tempcolor){

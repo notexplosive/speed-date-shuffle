@@ -55,6 +55,100 @@
       "prefab": null
     },
     {
+      "id": "40",
+      "name": "MatchColorParticles",
+      "children": [],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ParticleOwnerBehavior",
+            "propertyValues": {
+              "moveUp": {
+                "type": "boolean",
+                "value": true
+              },
+              "radius": {
+                "type": "number",
+                "value": 0.5
+              },
+              "density": {
+                "type": "number",
+                "value": 4
+              }
+            }
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 3.3009986877441406,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "41",
+      "name": "MatchValueParticles",
+      "children": [],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "ParticleOwnerBehavior",
+            "propertyValues": {
+              "moveUp": {
+                "type": "boolean",
+                "value": true
+              },
+              "radius": {
+                "type": "number",
+                "value": 0.5
+              },
+              "density": {
+                "type": "number",
+                "value": 3
+              }
+            }
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 3.3009986877441406,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
       "id": "3",
       "name": "Deck",
       "children": [],
@@ -168,9 +262,9 @@
         }
       ],
       "position": {
-        "x": 2,
-        "y": 3.85,
-        "z": 1.1
+        "x": 1,
+        "y": 4,
+        "z": 1.100000023841858
       },
       "orientation": {
         "x": 0,
@@ -256,13 +350,18 @@
           "type": "Behavior",
           "config": {
             "behaviorName": "CoolTextBehavior",
-            "propertyValues": {}
+            "propertyValues": {
+              "scaleFactor": {
+                "type": "number",
+                "value": 1.5
+              }
+            }
           },
           "id": "1"
         }
       ],
       "position": {
-        "x": 1.25,
+        "x": 0,
         "y": 4,
         "z": 0.10000000149011612
       },
@@ -472,14 +571,19 @@
           "type": "Behavior",
           "config": {
             "behaviorName": "PoolCounterBehavior",
-            "propertyValues": {}
+            "propertyValues": {
+              "scaleFactor": {
+                "type": "number",
+                "value": 0.66
+              }
+            }
           },
           "id": "1"
         }
       ],
       "position": {
-        "x": -1.25,
-        "y": 4,
+        "x": 0,
+        "y": 3,
         "z": 0
       },
       "orientation": {
@@ -489,8 +593,8 @@
         "w": 1
       },
       "scale": {
-        "x": 1,
-        "y": 1,
+        "x": 0.66,
+        "y": 0.66,
         "z": 1
       },
       "visible": true,
@@ -1637,6 +1741,40 @@
         "x": -7.575448989868164,
         "y": 3.2228729724884033,
         "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "42",
+      "name": "BurstHearts",
+      "children": [],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "BurstHeartsBehavior",
+            "propertyValues": {}
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": -7.470601432948703,
+        "y": -1.5734805686456257,
+        "z": 5
       },
       "orientation": {
         "x": 0,

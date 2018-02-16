@@ -2,7 +2,7 @@ function calculateScore(playerPlay,datePlay,interrupt){
   let bonus:string[] = [];
   let factor = 1;
   if(playerPlay.value == 0){
-    return {score:0,bonusLines:bonus,multiplier:1};
+    return {score:0,bonusLines:bonus,multiplier:1,val:0,col:false};
   }
   
   let colorMatch = isColorMatch(playerPlay.colors,datePlay.color);
@@ -32,7 +32,7 @@ function calculateScore(playerPlay,datePlay,interrupt){
   
   score *= factor;
   
-  return {score:Math.floor(score),bonusLines:bonus,multiplier:factor};
+  return {score:Math.floor(score),bonusLines:bonus,multiplier:factor,val:valueMatch,col:colorMatch};
 }
 
 

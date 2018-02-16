@@ -23,6 +23,20 @@ class ScoreEstimatorBehavior extends CoolTextBehavior {
       this.setText(text);
     }
     this.currentEstimate = newEstimate;
+    
+    if(calc['multiplier'] != 0){
+      Sup.getActor("MatchValueParticles").getBehavior(ParticleOwnerBehavior).enabled = calc['val'] == 2;
+      Sup.getActor("MatchColorParticles").getBehavior(ParticleOwnerBehavior).enabled = calc['col'];
+    }else{
+      Sup.getActor("MatchValueParticles").getBehavior(ParticleOwnerBehavior).enabled = false;
+      Sup.getActor("MatchColorParticles").getBehavior(ParticleOwnerBehavior).enabled = false;
+    }
+    
+    if(calc['col'] == true){
+      let partColor = ColorStringToColor(CURRENT_DATE.getCurrentColor());
+      Sup.log(CURRENT_DATE.getCurrentColor());
+      Sup.getActor("MatchColorParticles").getBehavior(ParticleOwnerBehavior).setColor(partColor);
+    }
   }
   
   private currentEstimate = 0;

@@ -739,6 +739,147 @@
                   "visible": true,
                   "layer": 0,
                   "prefab": null
+                },
+                {
+                  "id": "50",
+                  "name": "ParticleCluster",
+                  "children": [],
+                  "components": [
+                    {
+                      "type": "Behavior",
+                      "config": {
+                        "behaviorName": "ParticleOwnerBehavior",
+                        "propertyValues": {
+                          "r": {
+                            "type": "number",
+                            "value": 1
+                          },
+                          "g": {
+                            "type": "number",
+                            "value": 0.1
+                          },
+                          "b": {
+                            "type": "number",
+                            "value": 0.1
+                          }
+                        }
+                      },
+                      "id": "0"
+                    }
+                  ],
+                  "position": {
+                    "x": -1.925,
+                    "y": -1.487,
+                    "z": 0
+                  },
+                  "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": null
+                },
+                {
+                  "id": "51",
+                  "name": "ParticleCluster",
+                  "children": [],
+                  "components": [
+                    {
+                      "type": "Behavior",
+                      "config": {
+                        "behaviorName": "ParticleOwnerBehavior",
+                        "propertyValues": {
+                          "r": {
+                            "type": "number",
+                            "value": 1
+                          },
+                          "g": {
+                            "type": "number",
+                            "value": 0.1
+                          },
+                          "b": {
+                            "type": "number",
+                            "value": 0.1
+                          }
+                        }
+                      },
+                      "id": "0"
+                    }
+                  ],
+                  "position": {
+                    "x": -3.4513271731364625,
+                    "y": -1.5061589779724507,
+                    "z": 0
+                  },
+                  "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": null
+                },
+                {
+                  "id": "52",
+                  "name": "ParticleCluster",
+                  "children": [],
+                  "components": [
+                    {
+                      "type": "Behavior",
+                      "config": {
+                        "behaviorName": "ParticleOwnerBehavior",
+                        "propertyValues": {
+                          "r": {
+                            "type": "number",
+                            "value": 1
+                          },
+                          "g": {
+                            "type": "number",
+                            "value": 0.1
+                          },
+                          "b": {
+                            "type": "number",
+                            "value": 0.1
+                          }
+                        }
+                      },
+                      "id": "0"
+                    }
+                  ],
+                  "position": {
+                    "x": -0.1879238958393472,
+                    "y": -1.6530441076764824,
+                    "z": 0
+                  },
+                  "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": null
                 }
               ],
               "components": [],
