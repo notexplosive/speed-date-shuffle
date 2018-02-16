@@ -1,6 +1,5 @@
 let PLAYER_GRABBED = false;
 
-
 let PLAYAREA:PlayAreaBehavior;
 let PLAYERHAND:DeckObjectBehavior;
 let ERRORTEXT:ErrorTextBehavior;
