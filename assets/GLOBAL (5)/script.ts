@@ -13,6 +13,8 @@ let WINLOSE:ScoreTrackerBehavior;
 let MENU:MenuBehavior;
 let DATE_TEMPLATE:string = "template_Cat"
 
+let TUTORIAL_COMPLETE = false;
+
 let SCORE_WIN_THRESHOLD = 100;
 
 let RED =     new Sup.Color(0xffd2f6); //new Sup.Color(0x01ffd8)

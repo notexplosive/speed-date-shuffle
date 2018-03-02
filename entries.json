@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 142,
+  "nextEntryId": 143,
   "nodes": [
     {
       "id": "8",
@@ -156,6 +156,11 @@
         {
           "id": "141",
           "name": "TutorialCounter",
+          "type": "script"
+        },
+        {
+          "id": "142",
+          "name": "ColorAllSprites",
           "type": "script"
         }
       ]

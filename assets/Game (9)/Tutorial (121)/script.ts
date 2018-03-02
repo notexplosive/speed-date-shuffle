@@ -1,5 +1,6 @@
 class TutorialBehavior extends Sup.Behavior {
   update() {  
+    this.calledBlinkThisFrame = false;
     this.setText(newTutorialText[this.state]);
     let playArea = Sup.getActor('PlayArea').getBehavior(PlayAreaBehavior)
     if(this.state == 0 && playArea.getCardCount() == 3){
@@ -11,8 +12,14 @@ class TutorialBehavior extends Sup.Behavior {
     if(this.state == 2 && playArea.getTotalValue() == 7){
       this.state++;
     }
+    if(this.state == 3){
+      this.blink(Sup.getActor('Targetbg'))
+    }  
     if(this.state == 4 && playArea.getTotalValue() == 10){
       this.state++;
+    }
+    if(this.state == 5){
+      this.blink(Sup.getActor('green7'));
     }
     if(this.state == 6 && playArea.getTotalValue() == 2){
       this.state++;
@@ -20,8 +27,18 @@ class TutorialBehavior extends Sup.Behavior {
     if(this.state == 8 && playArea.getTotalValue() == 7 && playArea.getTotalColorAsString()[0] == 'red'){
       this.state++;
     }
+    if(this.state == 9){
+      this.blink(Sup.getActor('pinkc'));
+    }
     if(this.state == 10 && playArea.getTotalValue() == 5){
       this.state++;
+    }
+    if(this.state == 11){
+      this.blink(Sup.getActor('Targetbg'))
+    }
+    if(this.state > 12){
+      this.blink(Sup.getActor("BackButton"));
+      TUTORIAL_COMPLETE = true;
     }
     
     if(CANCEL_PRESSED){
@@ -36,6 +53,10 @@ class TutorialBehavior extends Sup.Behavior {
         case 13:
         this.state++;
       }
+    }
+    
+    if(!this.calledBlinkThisFrame){
+      this.blink(null);
     }
     
     CANCEL_PRESSED = false;
@@ -59,6 +80,7 @@ class TutorialBehavior extends Sup.Behavior {
   }
   
   blink(act:Sup.Actor){
+    this.calledBlinkThisFrame = true;
     if(this.blinkTarget){
       this.blinkTarget.spriteRenderer.setColor(new Sup.Color(1,1,1))
     }
@@ -81,6 +103,7 @@ class TutorialBehavior extends Sup.Behavior {
   timer = 0;
   blinkOn = false;
   blinkTarget:Sup.Actor = null;
+  calledBlinkThisFrame = false;
 }
 Sup.registerBehavior(TutorialBehavior);
 
@@ -112,7 +135,7 @@ let newTutorialText = [
   'Place any 3 cards here!',
   'The small number above corresponds to your play.\nPress cancel to withdraw your play.',
   'Put your 7 in the play area.',
-  "You want your play to be worth more than the target\n(that's the big number) Going over doesn't benefit you.",
+  "You want your play to be worth at least as much as the\ntarget value. Going over doesn't benefit you.",
   'Put your 7 and 3 in the play area',
   'The color with the highest total value (green) \nis the color of the whole play.',
   'Put both of your 1s in the play area.',

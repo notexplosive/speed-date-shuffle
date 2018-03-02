@@ -22,6 +22,20 @@ class MenuBehavior extends Sup.Behavior {
       }
     }
     
+    if(this.selectIndex == 0){
+      if(TUTORIAL_COMPLETE){
+        this.tick++;
+        if(this.tick % 10 == 0){
+          Sup.getActor('RightArrow').spriteRenderer.setColor(new Sup.Color(0xb4d3a9));
+        }
+        if(this.tick % 20 == 0){
+          Sup.getActor('RightArrow').spriteRenderer.setColor(1,1,1);
+        }
+      }
+    }else{
+      Sup.getActor('RightArrow').spriteRenderer.setColor(new Sup.Color(0xb4d3a9));
+    }
+    
     Sup.getActor("Description").textRenderer.setText(DATE_DESCRIPTIONS[this.selectIndex])
   }
   
@@ -75,5 +89,6 @@ class MenuBehavior extends Sup.Behavior {
   
   private selectIndex = 0;
   private maxIndex;
+  private tick = 0;
 }
 Sup.registerBehavior(MenuBehavior);

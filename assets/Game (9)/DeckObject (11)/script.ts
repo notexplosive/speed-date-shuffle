@@ -35,6 +35,9 @@ class DeckObjectBehavior extends Sup.Behavior {
       cards[3].color = 'red';
       cards[4].color = 'green';
       
+      cards[4].actor.setName('green7');
+      cards[3].actor.setName('pinkc');
+      
       for(let card of cards){
         card.deck = this;
         card.awake();

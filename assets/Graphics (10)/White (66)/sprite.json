@@ -5,7 +5,7 @@
   ],
   "filtering": "pixelated",
   "wrapping": "clampToEdge",
-  "pixelsPerUnit": 220,
+  "pixelsPerUnit": 100,
   "framesPerSecond": 10,
   "opacity": null,
   "alphaTest": 0.1,

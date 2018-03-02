@@ -227,6 +227,10 @@
         {
           "name": "blinkOn",
           "type": "boolean"
+        },
+        {
+          "name": "calledBlinkThisFrame",
+          "type": "boolean"
         }
       ]
     },
@@ -361,6 +365,12 @@
           "type": "boolean"
         }
       ]
+    },
+    "ColorAllSpritesBehavior": {
+      "scriptId": "142",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
     }
   }
 }
