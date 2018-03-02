@@ -26,6 +26,7 @@ let WHITE =   new Sup.Color(0xcccccc)
 let literalRed = 0x921a1d;
 let literalGreen = 0x0d991f;
 
+let WON_LAST_DATE = false;
 let PLAYER_VOICE:Sup.Audio.SoundPlayer[] = [];
 let COMPLETED_DATES:boolean[] = [];
 let CURRENT_DATE_INDEX:number = 0;
@@ -36,6 +37,22 @@ let DATE_DESCRIPTIONS:string[] = [
   "Hard\nNo Green Cards",
   "IMPOSSIBLE\nTweet @NotExplosive if you complete him"
 ]
+let DATE_WIN_LINES:string[] = [
+  'You have (1) message from Chelsea$This was a lot of fun!\nCall me some time!',
+  'You have (1) message from Alec$We really hit it off!\nLet me know if you want to spend\nmore time together.',
+  "You have (1) message from Amelia$You seem alright!\nI'll let you know next time I'm in town.",
+  'You have (4) messages from Ultimate Final Alec$IMPOSIBLE! I HAVE NEVER BEEN BESTED.\n\nI SUPPOSE THIS MEANS YOU ARE THE\nNEW DATING CHAMPION.\n\nCONGRADURATION.\n\n(tweet @notexplosive)'
+]
+
+let DATE_LOSE_LINES:string[] = [
+  'You have (1) message from Chelsea$That was... something...\nYou wanna try again some other time?',
+  "You have (1) message from Alec$Hmm. Not gonna lie,\nI'm a little disappointed.",
+  "You have (1) message from Amelia$The date was underwhelming,\nbut that's okay, they usually are.",
+  'You have (2) message from Ultimate Final Alec$I REMAIN DATING CHAMPION\n\nTRY AGAIN NEXT TIME.'
+]
+
+/* more uf alec lines */
+// "IT'S OKAY, THIS GAME IS MOSTLY LUCK ANYWAY\nAT LEAST THATS WHAT ALL THE REVIEWS SAY."
 
 let VOICES = [];
 VOICES["cat"] = []

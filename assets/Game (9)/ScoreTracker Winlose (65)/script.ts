@@ -15,6 +15,10 @@ class ScoreTrackerBehavior extends CoolTextBehavior {
     }
     
     if(Sup.Input.isKeyDown("SPACE")){
+      if(Sup.Input.wasKeyJustPressed("F")){
+        PLAYER_SCORE -= 5;
+        displayPopScore(0,"Cheat!",0xffffff);
+      }
       if(Sup.Input.wasKeyJustPressed("G")){
         PLAYER_SCORE += 5;
         displayPopScore(0,"Cheat!",0xffffff);
@@ -38,12 +42,14 @@ class ScoreTrackerBehavior extends CoolTextBehavior {
       Sup.getActor("White").spriteRenderer.setOpacity(fade);
     }else{
       if(this.winGame){
+        WON_LAST_DATE = true;
         COMPLETED_DATES[CURRENT_DATE_INDEX] = true;
-        this.queueSceneLoad("Bedroom")
+        this.queueSceneLoad("WinLoseScreen")
       }
       
       if(this.loseGame){
-        this.queueSceneLoad("Bedroom")
+        WON_LAST_DATE = false;
+        this.queueSceneLoad("WinLoseScreen")
       }
     }
   }
@@ -52,7 +58,8 @@ class ScoreTrackerBehavior extends CoolTextBehavior {
     if(!this.triggerSceneTransition){
       Sup.log("Triggered Scene Load")
       this.triggerSceneTransition = true;
-      let b = this.actor.addBehavior(TimeToNextSceneBehavior)
+      let b = this.actor.addBehavior(TimeToNextSceneBehavior);
+      b.target = str;
       b.timer=60;
     }
   }

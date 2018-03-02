@@ -371,6 +371,12 @@
       "line": 0,
       "parentBehavior": null,
       "properties": []
+    },
+    "WinLoseScreenBehavior": {
+      "scriptId": "144",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
     }
   }
 }

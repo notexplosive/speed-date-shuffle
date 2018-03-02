@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 143,
+  "nextEntryId": 145,
   "nodes": [
     {
       "id": "8",
@@ -161,6 +161,11 @@
         {
           "id": "142",
           "name": "ColorAllSprites",
+          "type": "script"
+        },
+        {
+          "id": "144",
+          "name": "WinLoseScreen",
           "type": "script"
         }
       ]
@@ -704,6 +709,11 @@
     {
       "id": "124",
       "name": "template_Card",
+      "type": "scene"
+    },
+    {
+      "id": "143",
+      "name": "WinLoseScreen",
       "type": "scene"
     }
   ]
