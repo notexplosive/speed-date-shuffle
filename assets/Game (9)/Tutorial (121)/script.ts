@@ -60,7 +60,7 @@ class TutorialBehavior extends Sup.Behavior {
   
   blink(act:Sup.Actor){
     if(this.blinkTarget){
-      this.blinkTarget.spriteRenderer.setColor(new Sup.Color(0,0,0))
+      this.blinkTarget.spriteRenderer.setColor(new Sup.Color(1,1,1))
     }
     if(!act){
       return;
