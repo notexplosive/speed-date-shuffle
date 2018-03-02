@@ -15,11 +15,11 @@ let DATE_TEMPLATE:string = "template_Cat"
 
 let SCORE_WIN_THRESHOLD = 100;
 
-let RED = new Sup.Color(0x01ffd8)
-let BLUE = new Sup.Color(0x71ff28)
-let GREEN = new Sup.Color(0x0e2259)
-let YELLOW = new Sup.Color(0xeeeeee)
-let WHITE = new Sup.Color(0xcccccc)
+let RED =     new Sup.Color(0xffd2f6); //new Sup.Color(0x01ffd8)
+let BLUE =    new Sup.Color(0x3588dd);//new Sup.Color(0x71ff28)  /// 0c457d
+let GREEN =   new Sup.Color(0x71ff28);//new Sup.Color(0x0e2259)
+let YELLOW =  new Sup.Color(0xeaf625);//new Sup.Color(0xeeeeee)
+let WHITE =   new Sup.Color(0xcccccc)
 
 let literalRed = 0x921a1d;
 let literalGreen = 0x0d991f;

@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 140,
+  "nextEntryId": 142,
   "nodes": [
     {
       "id": "8",
@@ -151,6 +151,11 @@
         {
           "id": "139",
           "name": "BurstHearts",
+          "type": "script"
+        },
+        {
+          "id": "141",
+          "name": "TutorialCounter",
           "type": "script"
         }
       ]
@@ -663,6 +668,11 @@
     },
     {
       "id": "120",
+      "name": "Tutorial_old",
+      "type": "scene"
+    },
+    {
+      "id": "140",
       "name": "Tutorial",
       "type": "scene"
     },

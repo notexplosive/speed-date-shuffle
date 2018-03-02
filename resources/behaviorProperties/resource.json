@@ -62,6 +62,10 @@
           "type": "string"
         },
         {
+          "name": "scale",
+          "type": "number"
+        },
+        {
           "name": "playAreaButton",
           "type": "boolean"
         }
@@ -215,6 +219,14 @@
         {
           "name": "state",
           "type": "number"
+        },
+        {
+          "name": "timer",
+          "type": "number"
+        },
+        {
+          "name": "blinkOn",
+          "type": "boolean"
         }
       ]
     },
@@ -330,6 +342,25 @@
       "line": 0,
       "parentBehavior": null,
       "properties": []
+    },
+    "TutorialCounterBehavior": {
+      "scriptId": "141",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "colorMatch",
+          "type": "boolean"
+        },
+        {
+          "name": "valueMatch",
+          "type": "boolean"
+        },
+        {
+          "name": "valueLess",
+          "type": "boolean"
+        }
+      ]
     }
   }
 }

@@ -102,7 +102,6 @@ class CardObjectBehavior extends Sup.Behavior {
       
       let playAreaPos = Sup.getActor("PlayArea").getPosition()
       let distanceToPlayArea = playAreaPos.subtract(this.actor.getPosition()).length();
-      
       if(distanceToPlayArea < 3.75){
         if(Sup.Input.wasMouseButtonJustPressed(0) && PLAYAREA.addToPool(this.actor)){
           Sup.Audio.playSound("Sound/Effects/PlayCard");

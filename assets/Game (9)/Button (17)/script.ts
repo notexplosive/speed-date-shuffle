@@ -1,6 +1,7 @@
 class ButtonBehavior extends Sup.Behavior {
   callback = 'none'
   text = ''
+  scale = 1;
   playAreaButton = false;
   textRenderer:Sup.TextRenderer;
   private scaleFactor = 1;
@@ -21,6 +22,7 @@ class ButtonBehavior extends Sup.Behavior {
     bt.moveY(-.5);
     this.textRenderer = new Sup.TextRenderer(bt,this.text,"Graphics/Regular").setOpacity(1);
     this.scaleFactor = this.actor.getLocalScaleX();
+    this.scale = this.actor.getLocalScaleX();
   }
 
   update() {
@@ -42,18 +44,18 @@ class ButtonBehavior extends Sup.Behavior {
       if(this.cooldown > 0){
         this.cooldown--;
       }else{
-        this.actor.setLocalScale(1.1,1.1,1)
+        this.actor.setLocalScale(this.scale*1.1,this.scale*1.1,1)
         if(Sup.Input.wasMouseButtonJustPressed(0)){
           Sup.Audio.playSound("Sound/Effects/PlayCard");
           ButtonFunctions[this.callback]();
           this.cooldown = 5;
         }
         if(Sup.Input.isMouseButtonDown(0)){
-          this.actor.setLocalScale(1.05*this.scaleFactor,1.05*this.scaleFactor,1.05)
+          this.actor.setLocalScale(1.05*this.scaleFactor*this.scale,1.05*this.scaleFactor*this.scale,1.05)
         }
       }
     }else{
-      this.actor.setLocalScale(1*this.scaleFactor,1*this.scaleFactor,1)
+      this.actor.setLocalScale(1*this.scale,1*this.scale,1)
     }
   }
   
@@ -72,6 +74,7 @@ let ButtonFunctions = {
   
   'cancel' : function(){
     PLAYAREA.returnPoolToDeck();
+    CANCEL_PRESSED = true;
   },
   
   'start-date' : function(){
@@ -106,3 +109,5 @@ let ButtonFunctions = {
     MUSIC.toggle();
   }
 }
+
+let CANCEL_PRESSED = false;

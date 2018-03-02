@@ -10,6 +10,39 @@ class DeckObjectBehavior extends Sup.Behavior {
   }
   
   start(){
+    // if we're in the tutorial
+    if(!CURRENT_DATE){
+      // Pink 3
+      // Yellow 1
+      // Blue 1
+      // Yellow C
+      // Green 7
+      let cards:CardObjectBehavior[] = [];
+      cards.push(new Sup.Actor('Card').addBehavior(CardObjectBehavior));
+      cards.push(new Sup.Actor('Card').addBehavior(CardObjectBehavior));
+      cards.push(new Sup.Actor('Card').addBehavior(CardObjectBehavior));
+      cards.push(new Sup.Actor('Card').addBehavior(CardObjectBehavior));
+      cards.push(new Sup.Actor('Card').addBehavior(CardObjectBehavior));
+      cards[0].value = 3;
+      cards[1].value = 1;
+      cards[2].value = 1;
+      cards[3].value = 0;
+      cards[4].value = 7;
+      
+      cards[0].color = 'red';
+      cards[1].color = 'yellow';
+      cards[2].color = 'blue';
+      cards[3].color = 'red';
+      cards[4].color = 'green';
+      
+      for(let card of cards){
+        card.deck = this;
+        card.awake();
+        this.addCardToHand(card.actor);
+      }
+      this.reorganizeHand();
+      return;
+    }
     if(CURRENT_DATE.deck != "none"){
       if(deckNames[CURRENT_DATE.deck]){
         this.deckData = deckNames[CURRENT_DATE.deck];
@@ -19,7 +52,10 @@ class DeckObjectBehavior extends Sup.Behavior {
   }
   
   update(){
-    Sup.getActor("DeckCounter").textRenderer.setText(""+this.deckData.countRemainingCards());
+    let deckCounter = Sup.getActor("DeckCounter")
+    if(deckCounter){
+      deckCounter.textRenderer.setText(""+this.deckData.countRemainingCards());
+    }
   }
   
   countRemainingCards(){

@@ -9,7 +9,7 @@ class PlayAreaBehavior extends Sup.Behavior {
     }
     
     if(this.pool.length > 0){
-      if(this.getTotalValue() > 0 && CURRENT_DATE.getCurrentColor() != 'white'){
+      if(this.getTotalValue() > 0 && (CURRENT_DATE && CURRENT_DATE.getCurrentColor() != 'white') || !CURRENT_DATE){
         Sup.getActor("PlayButton").setVisible(true)
       }
       Sup.getActor("CancelButton").setVisible(true)
@@ -58,6 +58,10 @@ class PlayAreaBehavior extends Sup.Behavior {
   
   getPool(){
     return this.pool;
+  }
+  
+  getCardCount(){
+    return this.pool.length;
   }
   
   addToPool(card:Sup.Actor){
